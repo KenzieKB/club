@@ -1,16 +1,98 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>About</title>
-  </head>
-  <body>
-    <h1 align = "center" style="font-size:33px">Digital Arts Club</h1>
-      <p align = "center" style="font-size:19px"> The Digital Arts Club is an after school club that normally runs every Tuesday,
-        from 3:00 to 4:00 P.M. Every Tuesday around 3:00 and 4:00 P.M. students are able to make art using computer programs such as PhotoShop and Adobe
-Students are also able to enter there art works into fun contest, and students were able to go to the Figge Art Museum for a field trip. Everyting
-that students do in Digital Arts Club is fun and educational. Students are able to learn how to make interesting peices of art uding computer programing,
-which can help them to get a unique job and some places even offer scholarships.<p>
-      <P> This school year, students were able to go to DeWitt Iowa to the Artist Studio
-  </body>
+<title>About Digital Arts Club</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+.bgimg {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('ice.jpg');
+    min-height: 100%;
+}
+</style>
+<body>
+
+<!-- Sidebar with image -->
+<nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:40%">
+  <div class="bgimg"></div>
+</nav>
+
+<!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+<nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright" style="padding:0 12px;">
+    <i class="fa fa-remove"></i>
+  </a>
+  <div class="w3-bar-block w3-center">
+    <a href="websitelayout.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
+    <a href="gallery.html"="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Gallery</a>
+    <a href="about.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">About Digtial Arts CLub</a>
+
+  </div>
+</nav>
+
+<!-- Page Content -->
+<div class="w3-main w3-padding-large" style="margin-left:40%">
+
+  <!-- Menu icon to open sidebar -->
+  <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
+
+  <!-- Header -->
+  <header class="w3-container w3-center" style="padding:128px 16px" id="home">
+    <h1 class="w3-jumbo"><b>Digital Arts Club</b></h1>
+    <p>Computer Graphic, Contest, & Projects</p>
+    <img src="/w3images/profile_girl.jpg" class="w3-image w3-hide-large w3-hide-small w3-round" style="display:block;width:60%;margin:auto;">
+    <img src="/w3images/profile_girl.jpg" class="w3-image w3-hide-large w3-hide-medium w3-round" width="1000" height="1333">
+    <button class="w3-button w3-light-grey w3-padding-large w3-margin-top">
+
+    </button>
+  </header>
+
+  <!-- Portfolio Section -->
+  <div class="w3-padding-32 w3-content" id="portfolio">
+    <h2 class="w3-text-grey">Contest Examples!</h2>
+    <hr class="w3-opacity">
+
+    <!-- Grid for photos -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <img src="tshrit.jpeg" style="width:100%">
+        <img src="Figge Factory Logo.jpg" style="width:100%">
+        <img src="trip.jpg" style="width:100%">
+      </div>
+
+
+    <!-- End photo grid -->
+    </div>
+  <!-- End Portfolio Section -->
+  </div>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
+    <h2>About</h2>
+    <hr class="w3-opacity">
+    <p>Digital Art Club, is a After School Club that students go to on tuesdays from 3:00 to 4:00 and during that time students get to make art from all kinds of interesting projects from the computer.
+      All while learning basic Computer Graphics Skills. Students get to make all kinds of art for not only enjoyment but also for Projects and Contests. Students have also have made artwork for classes and teachers.
+      While all this sounds cool enough already, This Year students got an amazing Scholarship oppertunity. From the American Academy of Art, they created an amazing deal for high school seniors, mostly any seinor interested in Grapic Design or Photography,
+      can enter a compa
+    </p>
+<script>
+// Open and close sidebar
+function openNav() {
+    document.getElementById("mySidebar").style.width = "60%";
+    document.getElementById("mySidebar").style.display = "block";
+}
+
+function closeNav() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
 </html>
